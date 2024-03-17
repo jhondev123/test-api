@@ -12,18 +12,25 @@ class Api_C_Controller extends Controller
      */
     public function index()
     {
+        // $response_api_c = [
+        //     [
+        //         "nome_api_c" => "jhonattan api_c",
+        //         "cpf_api_c" => "136.125.999-09",
+        //         "email_api_c" => "jhonattan@gmail.com",
+        //     ],
+        //     [
+        //         "nome_api_c" => "jhonattan api_b",
+        //         "cpf_api_c" => "136.125.999-09",
+        //         "email_api_c" => "jhonattan@gmail.com",
+        //     ],
+        // ];
+
         $response_api_c = [
-            [
                 "nome_api_c" => "jhonattan api_c",
                 "cpf_api_c" => "136.125.999-09",
                 "email_api_c" => "jhonattan@gmail.com",
-            ],
-            [
-                "nome_api_c" => "jhonattan api_b",
-                "cpf_api_c" => "136.125.999-09",
-                "email_api_c" => "jhonattan@gmail.com",
-            ],
         ];
+
         return response()->json($response_api_c, 200);
     }
 

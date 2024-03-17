@@ -12,18 +12,25 @@ class Api_D_Controller extends Controller
      */
     public function index()
     {
+        // $response_api_d = [
+        //     [
+        //         "nome_api_d" => "jhonattan api_d",
+        //         "cpf_api_d" => "136.125.999-09",
+        //         "email_api_d" => "jhonattan@gmail.com",
+        //     ],
+        //     [
+        //         "nome_api_d" => "jhonattan api_d",
+        //         "cpf_api_d" => "136.125.999-09",
+        //         "email_api_d" => "jhonattan@gmail.com",
+        //     ],
+        // ];
+
         $response_api_d = [
-            [
                 "nome_api_d" => "jhonattan api_d",
                 "cpf_api_d" => "136.125.999-09",
                 "email_api_d" => "jhonattan@gmail.com",
-            ],
-            [
-                "nome_api_d" => "jhonattan api_d",
-                "cpf_api_d" => "136.125.999-09",
-                "email_api_d" => "jhonattan@gmail.com",
-            ],
         ];
+
         return response()->json($response_api_d, 200);
     }
 
